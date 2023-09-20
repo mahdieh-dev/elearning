@@ -1,83 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>E-Learning Website</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/landing.css" />
-  </head>
-  <body>
-    <nav>
-      <ul id="nav-header">
-        <a href="/"> <li class="header-item">Home</li> </a
-        ><a href="/blog"> <li class="header-item">Blog</li> </a
-        ><a href="/aboutus"> <li class="header-item">About Us</li> </a
-        ><a href="/contactus">
-          <li class="header-item">Contact Us</li>
-        </a>
-      </ul>
-    </nav>
-    <div class="hero">
-      <div class="backdrop" />
-      <div class="hero-text-wrap">
-        <h1 class="hero-title">
-          The best offer on the market<br /><span>for your business</span>
-        </h1>
-        <div class="btns-wrapper">
-          <button class="btn-primary">GET STARTED</button>
-          <button class="btn-secondary">LEARN MORE</button>
-        </div>
-      </div>
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/landing.css"/>
+    <script src="https://kit.fontawesome.com/08c0a55de0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+    <div class="menu-icon-container" onclick="onMenuIconClick(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
-    <div class="seperator-line" />
-    <div class="blog-section">
-      <h2>Explore our articles</h2>
-      <p>
+    <ul id="nav-header">
+    </ul>
+</nav>
+<div class="hero">
+    <div class="backdrop"></div>
+    <div class="hero-text-wrap">
+        <p class="hero-title">
+            The best offer on the market<br/><span>for your business</span>
+        </p>
+        <div class="btn-wrapper">
+            <button class="btn-primary">GET STARTED</button>
+            <button class="btn-secondary">LEARN MORE</button>
+        </div>
+    </div>
+</div>
+<div class="separator-line"></div>
+<div class="blog-section">
+    <h2>Explore our articles</h2>
+    <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi
         accusantium officiis facere ex aliquam id, dolor iure magnam repudiandae
         sunt sapiente nisi fuga quos error laborum soluta blanditiis debitis
         possimus incidunt dignissimos magni. Asperiores quam illum ullam vel
         libero voluptas quis fuga, excepturi ipsam nostrum alias dolores fugit
         saepe?
-      </p>
-      <div class="blog-posts-wrap">
-        <article class="blog-article">
-          <img
-            src="https://picsum.photos/200?1"
-            alt="dummy image for blog posts"
-          />
-          <h3>Code Optimization Made Easy!</h3>
-        </article>
-        <article class="blog-article">
-          <img
-            src="https://picsum.photos/200?1"
-            alt="dummy image for blog posts"
-          />
-          <h3>Code Optimization Made Easy!</h3>
-        </article>
-        <article class="blog-article">
-          <img
-            src="https://picsum.photos/200?1"
-            alt="dummy image for blog posts"
-          />
-          <h3>Code Optimization Made Easy!</h3>
-        </article>
-        <article class="blog-article">
-          <img
-            src="https://picsum.photos/100?1"
-            alt="dummy image for blog posts"
-          />
-          <h3>Code Optimization Made Easy!</h3>
-        </article>
-        <article class="blog-article">
-          <img
-            src="https://picsum.photos/100?1"
-            alt="dummy image for blog posts"
-          />
-          <h3>Code Optimization Made Easy!</h3>
-        </article>
-      </div>
-    </div>
-  </body>
+    </p>
+    <section id="blog-section">
+    </section>
+</div>
+<script src="assets/js/landing.js"></script>
+</body>
 </html>
