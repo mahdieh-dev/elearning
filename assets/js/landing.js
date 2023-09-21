@@ -20,29 +20,34 @@ mapNavigation()
 function renderArticles() {
     const articles = [
         {
-            image: 'https://picsum.photos/200?1',
+            image: 'https://picsum.photos/100?1',
             alt: "dummy image for blog posts",
-            title: 'Code Optimization Made Easy!'
+            title: 'Code Optimization Made Easy!',
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non pariatur rem repellat sapiente veritatis voluptas"
         },
         {
-            image: 'https://picsum.photos/200?1',
+            image: 'https://picsum.photos/100?1',
             alt: "dummy image for blog posts",
-            title: 'Code Optimization Made Easy!'
+            title: 'Code Optimization Made Easy!',
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non pariatur rem repellat sapiente veritatis voluptas"
         },
         {
-            image: 'https://picsum.photos/200?1',
+            image: 'https://picsum.photos/100?1',
             alt: "dummy image for blog posts",
-            title: 'Code Optimization Made Easy!'
+            title: 'Code Optimization Made Easy!',
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non pariatur rem repellat sapiente veritatis voluptas"
         },
         {
-            image: 'https://picsum.photos/200?1',
+            image: 'https://picsum.photos/100?1',
             alt: "dummy image for blog posts",
-            title: 'Code Optimization Made Easy!'
+            title: 'Code Optimization Made Easy!',
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non pariatur rem repellat sapiente veritatis voluptas"
         },
         {
-            image: 'https://picsum.photos/200?1',
+            image: 'https://picsum.photos/100?1',
             alt: "dummy image for blog posts",
-            title: 'Code Optimization Made Easy!'
+            title: 'Code Optimization Made Easy!',
+            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non pariatur rem repellat sapiente veritatis voluptas"
         },
     ]
 
@@ -52,7 +57,10 @@ function renderArticles() {
                     src=${el.image}
                     alt=${el.alt}
             />
-            <h3>${el.title}</h3>
+            <div class="article-card-text-container">
+                <h3>${el.title}</h3>
+                <p>${el.description.slice(0, 50) + "..."}</p>
+            </div>
         </article>`
     ).join("")
 }
