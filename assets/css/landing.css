@@ -1,5 +1,9 @@
 /* General Styles */
 
+html, body {
+    height: 100%
+}
+
 body {
     background-color: #010158;
     color: #fff;
@@ -143,7 +147,6 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
-    height: 700px;
     padding: 0;
 }
 
@@ -172,10 +175,10 @@ section {
 /* Languages section styles */
 
 #languages-container {
-    height: 1000px;
     display: flex;
     padding: 0;
     justify-content: space-between;
+    height: 770px;
 }
 
 .language-card {
@@ -194,4 +197,94 @@ section {
     width: 100px;
     height: 100px;
     object-fit: contain;
+}
+
+/* Footer styles */
+.footer-container {
+    position: absolute;
+    bottom: -950px;
+    right: 0;
+    left: 0;
+    border-top: 3px solid #fff;
+    padding: 0 16px;
+}
+
+.footer-content-wrapper > ul {
+    padding: 0
+}
+
+.footer-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fa {
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #f00;
+    color: white;
+}
+
+.google-map {
+    position: relative;
+    padding: 16px;
+    background: linear-gradient(to top left, blue 30%, green 30%, yellow 70%, red);
+    width: fit-content;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.google-map > i {
+    visibility: visible;
+    font-size: 1rem;
+    color: #000000;
+    width: 1rem;
+    object-fit: contain;
+}
+
+.google-map > iframe {
+    visibility: hidden;
+    display: none;
+}
+
+.footer-container > address {
+    margin-top: 24px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .google-map > iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .google-map > iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0
+    }
 }

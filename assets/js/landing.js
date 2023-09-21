@@ -98,4 +98,18 @@ function renderLanguages() {
 
 renderLanguages()
 
+function renderFooterItems() {
+    const footerItems = [
+        {icon: 'twitter', label: 'Twitter', url: 'https://twitter.com'},
+        {icon: 'instagram', label: 'Twitter', url: 'https://instagram.com'},
+        {icon: 'youtube', label: 'Twitter', url: 'https://youtube.com'},
+    ]
+
+    document.getElementById('nav-footer').innerHTML = footerItems.map(el => `
+    <a href="${el.url}" class="fa fa-${el.icon}"></a>
+    `).join("")
+}
+
+renderFooterItems()
+
 
