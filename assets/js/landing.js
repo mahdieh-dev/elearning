@@ -17,6 +17,11 @@ function mapNavigation() {
 
 mapNavigation()
 
+function onMenuIconClick(x) {
+    x.classList.toggle("change")
+    document.getElementById('nav-header').classList.toggle('change')
+}
+
 function renderArticles() {
     const articles = [
         {
@@ -51,7 +56,7 @@ function renderArticles() {
         },
     ]
 
-    document.getElementById('blog-section').innerHTML = articles.map(el =>
+    document.getElementById('articles-container').innerHTML = articles.map(el =>
         `<article class="article-card">
             <img
                     src=${el.image}
@@ -67,7 +72,30 @@ function renderArticles() {
 
 renderArticles()
 
-function onMenuIconClick(x) {
-    x.classList.toggle("change")
-    document.getElementById('nav-header').classList.toggle('change')
+function renderLanguages() {
+    const languages = [
+        {
+            title: 'RUST',
+            image: '/assets/images/rust.png',
+        },
+        {
+            title: 'GO',
+            image: '/assets/images/go.png',
+        },
+        {
+            title: 'PYTHON',
+            image: '/assets/images/python.png',
+        },
+    ]
+
+    document.getElementById('languages-container').innerHTML = languages.map(el => `
+    <div class="language-card">
+        <img src=${el.image} alt="logo of the ${el.title} programming language" >
+        <h3>${el.title}</h3>
+    </div>
+    `).join("")
 }
+
+renderLanguages()
+
+
