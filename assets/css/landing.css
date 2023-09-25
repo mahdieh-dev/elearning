@@ -9,6 +9,9 @@ body {
     color: #fff;
     padding: 0;
     margin: 0;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 button {
@@ -17,11 +20,25 @@ button {
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     font-weight: 700;
+    cursor: pointer;
 }
 
 section {
     padding: 0 16px;
     margin-top: 20px;
+    position: relative;
+}
+
+ul {
+    margin: 0;
+    cursor: pointer;
+}
+
+header {
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 32px;
 }
 
 /* Common Styles */
@@ -90,13 +107,15 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    height: 70vw;
 }
 
 .hero-image {
     width: 100%;
-    height: 70vw;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -133,6 +152,7 @@ section {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 /* Articles section styles */
@@ -154,11 +174,12 @@ section {
     margin-top: 16px;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 0 16px;
     box-shadow: 4px 4px 5px grey;
     color: #000;
+    cursor: pointer;
+    background-color: #e5e5f7;
 }
 
 .article-card > img {
@@ -178,19 +199,20 @@ section {
     display: flex;
     padding: 0;
     justify-content: space-between;
-    height: 770px;
+    height: 1000px;
 }
 
 .language-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     height: fit-content;
     padding: 8px;
     border-radius: 10px;
     color: #000;
     box-shadow: 4px 4px 5px grey;
+    cursor: pointer;
+    background-color: #e5e5f7;
 }
 
 .language-card > img {
@@ -202,11 +224,11 @@ section {
 /* Footer styles */
 .footer-container {
     position: absolute;
-    bottom: -950px;
+    bottom: -980px;
     right: 0;
     left: 0;
-    border-top: 3px solid #fff;
-    padding: 0 16px;
+    border-top: 6px solid #fff;
+    padding: 16px;
 }
 
 .footer-content-wrapper > ul {
@@ -250,9 +272,15 @@ section {
     position: relative;
     padding: 16px;
     background: linear-gradient(to top left, blue 30%, green 30%, yellow 70%, red);
-    width: fit-content;
+    width: 16px;
+    height: 16px;
     border-radius: 8px;
-    margin-left: 16px;
+}
+
+.google-map > a {
+    visibility: visible;
+    height: auto;
+    width: auto;
 }
 
 .google-map > i {
@@ -265,26 +293,148 @@ section {
 
 .google-map > iframe {
     visibility: hidden;
-    display: none;
+    height: 0;
 }
 
-.footer-container > address {
+.footer-content-wrapper > address {
     margin-top: 24px;
+    margin-left: 24px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 914px) {
+    /* General Styles */
+    button {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* Header Styles */
+    #nav-header {
+        visibility: visible;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .header-item {
+        font-size: 1.2rem;
+        margin-left: 32px;
+    }
+
+    .menu-icon-container {
+        visibility: hidden;
+    }
+
+    /* Hero Styles */
+    .hero {
+        height: 45vw;
+    }
+
+    .hero-texts-container {
+        width: 80%;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .buttons-container {
+        margin-top: 50px;
+        width: 45%;
+    }
+
+    /* Article Styles */
+    #articles-container {
+        flex-direction: row;
+    }
+
+    .article-card {
+        flex-direction: column;
+        margin-right: 16px;
+        padding-top: 16px;
+    }
+
+    .article-card:last-of-type {
+        margin-right: 0;
+    }
+
+    .article-card > img {
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+    }
+
+    /* Language Styles */
+    #languages-container {
+        justify-content: center;
+        margin-top: 32px;
+        height: 450px;
+    }
+
+    .language-card {
+        margin-right: 16px;
+    }
+
+    /* Footer Styles */
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        bottom: -1000px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .google-map {
+        background: none;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 0;
+    }
 
     .google-map > iframe {
-        width: 100%;
-        height: 100%;
+        visibility: visible;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        top: 0;
+        border-radius: 20px;
+        margin-left: 40px;
+    }
+
+    .google-map > a {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    .footer-content-wrapper > address {
+        font-size: 1.1rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .google-map > iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0
+
+    /* Hero Styles */
+    .hero-texts-container {
+        width: 45%;
+        padding: 80px 0;
+    }
+
+    /* Language Styles */
+    #languages-container {
+        height: 600px;
+    }
+
+    /* Footer Styles */
+    .footer-container {
+        bottom: -1200px;
     }
 }
