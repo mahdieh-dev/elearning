@@ -1,0 +1,9 @@
+@import "vars";
+
+@mixin boxShadow {
+  box-shadow: 0 0 10px $shadowColor;
+}
+
+@mixin greyBoxShadow {
+  box-shadow: 4px 4px 5px grey;
+}

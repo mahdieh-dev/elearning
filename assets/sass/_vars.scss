@@ -1,0 +1,26 @@
+// color pallet
+$backgroundColor: #010158;
+$white: #fff;
+$black: #000;
+$primary: #00f;
+$modalBlackBackground: rgba(0, 0, 0, 0.3);
+$modalWhiteBackground: rgba(255, 255, 255, 0.6);
+$shadowColor: rgba(0, 0, 0, 0.7);
+$cardBackground: #e5e5f7;
+$backgroundDot: #444cf7;
+
+// fonts
+@font-face {
+  font-family: RobotoRegular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+
+// sizes
+$defaultGap: 1em;
+$defaultBorderRadius: 8px;
+$defaultBorderWidth: 8px;
