@@ -16,48 +16,117 @@
         <div class="bar3"></div>
     </div>
     <ul id="nav-header">
+        <li class="header-item" onclick="/" >Home</li>
+        <li class="header-item" onclick="/blog" >Blog</li>
+        <li class="header-item" onclick="/about" >About</li>
+        <li class="header-item" onclick="/contactus" >Contact</li>
     </ul>
 </nav>
-<section class="hero">
-    <img src="assets/images/hero.png" class="hero-image" alt="A wavy blue image">
-    <div class="hero-texts-container">
-        <header class="hero-title">
-            The best offer on the market<br/><span>for your business</span>
-        </header>
-        <div class="buttons-container">
-            <button class="btn-primary">GET STARTED</button>
-            <button class="btn-secondary">LEARN MORE</button>
+
+<main>
+    <section class="hero">
+        <img src="assets/images/hero.png" class="hero-image" alt="A wavy blue image">
+        <div class="hero-texts-container">
+            <header class="hero-title">
+                The best offer on the market<br/><span>for your business</span>
+            </header>
+            <div class="buttons-container">
+                <button class="btn-primary">GET STARTED</button>
+                <button class="btn-secondary">LEARN MORE</button>
+            </div>
         </div>
-    </div>
-</section>
-<section class="articles-section">
-    <header>Explore our articles</header>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi
-        accusantium officiis facere ex aliquam id, dolor iure magnam repudiandae
-        sunt sapiente nisi fuga quos error laborum soluta blanditiis debitis
-        possimus incidunt dignissimos magni. Asperiores quam illum ullam vel
-        libero voluptas quis fuga, excepturi ipsam nostrum alias dolores fugit
-        saepe?
-    </p>
-    <section id="articles-container">
     </section>
-</section>
-<section class="languages-section">
-    <header>Practice your target language</header>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi
-        accusantium officiis facere ex aliquam id, dolor iure magnam repudiandae
-        sunt sapiente nisi fuga quos error laborum soluta blanditiis debitis
-        possimus incidunt dignissimos magni. Asperiores quam illum ullam vel
-        libero voluptas quis fuga, excepturi ipsam nostrum alias dolores fugit
-        saepe?
-    </p>
-    <section id="languages-container"></section>
-</section>
-<nav class="footer-container">
+    <section class="articles-section">
+        <h2>Explore our articles</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi
+            accusantium officiis facere ex aliquam id, dolor iure magnam repudiandae
+            sunt sapiente nisi fuga quos error laborum soluta blanditiis debitis
+            possimus incidunt dignissimos magni. Asperiores quam illum ullam vel
+            libero voluptas quis fuga, excepturi ipsam nostrum alias dolores fugit
+            saepe?
+        </p>
+        <section id="articles-container">
+            <div class="article-card">
+                <img
+                        src='https://picsum.photos/100?1'
+                        alt="dummy image for blog posts"
+                />
+                <div class="article-card-text-container">
+                    <h3>Code Optimization Made Easy!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non p...</p>
+                </div>
+            </div><div class="article-card">
+                <img
+                        src='https://picsum.photos/100?1'
+                        alt="dummy image for blog posts"
+                />
+                <div class="article-card-text-container">
+                    <h3>Code Optimization Made Easy!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non p...</p>
+                </div>
+            </div><div class="article-card">
+                <img
+                        src='https://picsum.photos/100?1'
+                        alt="dummy image for blog posts"
+                />
+                <div class="article-card-text-container">
+                    <h3>Code Optimization Made Easy!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non p...</p>
+                </div>
+            </div><div class="article-card">
+                <img
+                        src='https://picsum.photos/100?1'
+                        alt="dummy image for blog posts"
+                />
+                <div class="article-card-text-container">
+                    <h3>Code Optimization Made Easy!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non p...</p>
+                </div>
+            </div><div class="article-card">
+                <img
+                        src='https://picsum.photos/100?1'
+                        alt="dummy image for blog posts"
+                />
+                <div class="article-card-text-container">
+                    <h3>Code Optimization Made Easy!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta fugiat ipsa labore non p...</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="languages-section">
+        <h2>Practice your target language</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi
+            accusantium officiis facere ex aliquam id, dolor iure magnam repudiandae
+            sunt sapiente nisi fuga quos error laborum soluta blanditiis debitis
+            possimus incidunt dignissimos magni. Asperiores quam illum ullam vel
+            libero voluptas quis fuga, excepturi ipsam nostrum alias dolores fugit
+            saepe?
+        </p>
+        <section id="languages-container">
+            <div class="language-card">
+                <img src='/assets/images/rust.png' alt="logo of the RUST programming language" >
+                <h3>RUST</h3>
+            </div><div class="language-card">
+                <img src='/assets/images/rust.png' alt="logo of the RUST programming language" >
+                <h3>RUST</h3>
+            </div><div class="language-card">
+                <img src='/assets/images/rust.png' alt="logo of the RUST programming language" >
+                <h3>RUST</h3>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer>
     <div class="footer-content-wrapper">
-        <ul id="nav-footer"></ul>
+        <div>
+            <a href='https://twitter.com' class="fa fa-twitter"></a>
+            <a href='https://instagram.com' class="fa fa-instagram"></a>
+            <a href='https://youtube.com' class="fa fa-youtube"></a>
+        </div>
         <address>
             Developed by <a href="mailto:mahdiehshavandi@ymail.com">Mahdieh Shavandi</a>.<br>
             Visit my portfolio at:<br>
@@ -65,17 +134,17 @@
             Morvarid Shahr, Zone 22nd<br>
             Tehran, Iran
         </address>
-
     </div>
     <div class="google-map">
         <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%88%D8%A7%D8%B1%DB%8C%D8%AF+%D8%B4%D9%87%D8%B1%E2%80%AD/@35.7526406,51.135479,17z/data=!4m14!1m7!3m6!1s0x3f8defc89a7b4efd:0xcc5a977b12644b4b!2sKhademin(H.S)15!8m2!3d35.7528563!4d51.1331683!16s%2Fg%2F11s93tynhr!3m5!1s0x3f8def9d73c8d067:0x1e4a3a2f19f1f591!8m2!3d35.7526297!4d51.138285!16s%2Fg%2F11v00c3h7k?entry=ttu">
             <i class="fa-solid fa-location-dot"></i>
         </a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.9253052921886!2d51.1354790112118!3d35.752640632978114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8def9d73c8d067%3A0x1e4a3a2f19f1f591!2z2YXYsdmI2KfYsduM2K8g2LTZh9ix!5e0!3m2!1sen!2s!4v1695273350494!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</nav>
-<script src="assets/js/landing.js"></script>
+</footer>
 </body>
+
+<script src="assets/js/landing.js"></script>
 </html>

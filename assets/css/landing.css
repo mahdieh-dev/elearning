@@ -1,7 +1,8 @@
 /* General Styles */
 
 html, body {
-    height: 100%
+    min-height: 100vh;
+    width: 100%;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 button {
-    padding: 8px;
+    padding: 1em;
     border-radius: 8px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -24,7 +25,7 @@ button {
 }
 
 section {
-    padding: 0 16px;
+    padding: 0 1.5em;
     margin-top: 20px;
     position: relative;
 }
@@ -39,6 +40,13 @@ header {
     line-height: 1;
     font-weight: bold;
     margin-top: 32px;
+}
+
+footer {
+    border-top: 8px solid #fff;
+    padding: 16px;
+    margin-top: 32px;
+    height: 57%;
 }
 
 /* Common Styles */
@@ -153,6 +161,7 @@ header {
 .buttons-container {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 16px;
 }
@@ -168,6 +177,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 16px;
     padding: 0;
 }
@@ -199,9 +209,9 @@ header {
 
 #languages-container {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
-    justify-content: space-between;
-    height: 1000px;
+    gap: 16px;
 }
 
 .language-card {
@@ -224,18 +234,6 @@ header {
 }
 
 /* Footer styles */
-.footer-container {
-    position: absolute;
-    bottom: -980px;
-    right: 0;
-    left: 0;
-    border-top: 6px solid #fff;
-    padding: 16px;
-}
-
-.footer-content-wrapper > ul {
-    padding: 0
-}
 
 .footer-content-wrapper {
     display: flex;
@@ -303,7 +301,13 @@ header {
     margin-left: 24px;
 }
 
-@media only screen and (min-width: 914px) {
+@media only screen and (min-width: 600px ) {
+    .hero-texts-container {
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     /* General Styles */
     button {
         font-size: 1rem;
@@ -312,6 +316,12 @@ header {
 
     p {
         font-size: 1.1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        height: auto;
     }
 
     /* Header Styles */
@@ -353,16 +363,14 @@ header {
     /* Article Styles */
     #articles-container {
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
     }
 
     .article-card {
+        max-width: 20vw;
         flex-direction: column;
-        margin-right: 16px;
         padding-top: 16px;
-    }
-
-    .article-card:last-of-type {
-        margin-right: 0;
     }
 
     .article-card > img {
@@ -375,7 +383,6 @@ header {
     #languages-container {
         justify-content: center;
         margin-top: 32px;
-        height: 450px;
     }
 
     .language-card {
@@ -383,12 +390,6 @@ header {
     }
 
     /* Footer Styles */
-    .footer-container {
-        display: flex;
-        flex-direction: row;
-        bottom: -1000px;
-    }
-
     .footer-content-wrapper {
         flex-direction: column;
         justify-content: center;
@@ -396,15 +397,15 @@ header {
 
     .google-map {
         background: none;
-        width: 15vw;
-        height: 15vw;
+        width: 150px;
+        height: 150px;
         border-radius: 0;
     }
 
     .google-map > iframe {
         visibility: visible;
-        width: 15vw;
-        height: 15vw;
+        width: 150px;
+        height: 150px;
         position: absolute;
         top: 0;
         border-radius: 20px;
@@ -428,15 +429,5 @@ header {
     .hero-texts-container {
         width: 45%;
         padding: 80px 0;
-    }
-
-    /* Language Styles */
-    #languages-container {
-        height: 600px;
-    }
-
-    /* Footer Styles */
-    .footer-container {
-        bottom: -1200px;
     }
 }
