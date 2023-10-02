@@ -1,0 +1,40 @@
+@import "common";
+
+article {
+  padding: $defaultGap;
+  margin-top: $defaultGap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 45vw;
+    margin-top: $defaultGap;
+  }
+
+  p {
+    margin-top: $defaultGap;
+
+    &:first-of-type {
+      margin-top: 3*$defaultGap;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  article {
+    img {
+      width: 85%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  article {
+    img {
+      width: 70%;
+      height: 30vw;
+    }
+  }
+}
