@@ -1,0 +1,24 @@
+@import "vars";
+@import "mixins";
+
+.baseButton {
+  padding: $defaultGap;
+  border-radius: $defaultBorderRadius;
+  border: none;
+  font-family: RobotoMedium, sans-serif;
+  cursor: pointer;
+  @include boxShadow;
+}
+
+.btn-primary {
+  @extend .baseButton;
+  background-color: $primary;
+  color: $white;
+}
+
+.btn-secondary {
+  @extend .baseButton;
+  background-color: transparent;
+  box-shadow: none;
+  color: $primary;
+}

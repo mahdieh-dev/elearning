@@ -14,6 +14,42 @@
   font-family: RobotoMedium;
   src: url(/assets/fonts/Roboto-Medium.ttf);
 }
+@font-face {
+  font-family: RobotoRegular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+.baseButton, .btn-secondary, .btn-primary {
+  padding: 1em;
+  border-radius: 8px;
+  border: none;
+  font-family: RobotoMedium, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+  background-color: #00f;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  box-shadow: none;
+  color: #00f;
+}
+
 /* General Styles */
 html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
@@ -36,15 +72,6 @@ body {
   background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, transparent 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
-}
-
-button {
-  padding: 1em;
-  border-radius: 8px;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 section {
@@ -70,18 +97,6 @@ footer {
   padding: 1em;
   margin-top: 2em;
   height: 57%;
-}
-
-/* Common Styles */
-.btn-primary {
-  background-color: #00f;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  box-shadow: none;
-  color: #00f;
 }
 
 /* Header Styles */

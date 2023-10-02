@@ -1,7 +1,8 @@
 @import "vars";
 @import "mixins";
+@import "common";
 
-/* General Styles */
+  /* General Styles */
 html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
 }
@@ -24,15 +25,6 @@ body {
   background-image: radial-gradient($backgroundDot 0.5px, transparent 0.5px), radial-gradient($backgroundDot 0.5px, transparent 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
-}
-
-button {
-  padding: $defaultGap;
-  border-radius: $defaultBorderRadius;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  @include boxShadow;
 }
 
 section {
@@ -58,18 +50,6 @@ footer {
   padding: $defaultGap;
   margin-top: 2*$defaultGap;
   height: 57%;
-}
-
-/* Common Styles */
-.btn-primary {
-  background-color: $primary;
-  color: $white;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  box-shadow: none;
-  color: $primary;
 }
 
 /* Header Styles */
@@ -163,9 +143,10 @@ footer {
   font-size: 2rem;
   line-height: 1;
   margin-top: 0;
-    span {
-        color: $primary;
-    }
+
+  span {
+    color: $primary;
+  }
 }
 
 .buttons-container {
@@ -202,10 +183,11 @@ footer {
   cursor: pointer;
   background-color: $cardBackground;
   @include greyBoxShadow;
-    img {
-        border-top-left-radius: $defaultBorderRadius;
-        border-bottom-left-radius: $defaultBorderRadius;
-    }
+
+  img {
+    border-top-left-radius: $defaultBorderRadius;
+    border-bottom-left-radius: $defaultBorderRadius;
+  }
 }
 
 .article-card-text-container {
@@ -234,11 +216,12 @@ footer {
   cursor: pointer;
   background-color: $cardBackground;
   @include greyBoxShadow;
-    img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-    }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
 }
 
 /* Footer styles */
@@ -247,10 +230,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-address {
+
+  address {
     margin-top: 1.5*$defaultGap;
     margin-left: 1.5*$defaultGap;
-}
+  }
 }
 
 .fa {
@@ -286,22 +270,25 @@ address {
   width: 16px;
   height: 16px;
   border-radius: $defaultBorderRadius;
-    a{
-        visibility: visible;
-        height: auto;
-        width: auto;
-    }
-    i {
-        visibility: visible;
-        font-size: 1rem;
-        color: $black;
-        width: 1rem;
-        object-fit: contain;
-    }
-    iframe {
-        visibility: hidden;
-        height: 0;
-    }
+
+  a {
+    visibility: visible;
+    height: auto;
+    width: auto;
+  }
+
+  i {
+    visibility: visible;
+    font-size: 1rem;
+    color: $black;
+    width: 1rem;
+    object-fit: contain;
+  }
+
+  iframe {
+    visibility: hidden;
+    height: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -374,11 +361,12 @@ address {
     max-width: 20vw;
     flex-direction: column;
     padding-top: $defaultGap;
-      img{
-          width: 100%;
-          height: 48px;
-          border-radius: $defaultBorderRadius;
-      }
+
+    img {
+      width: 100%;
+      height: 48px;
+      border-radius: $defaultBorderRadius;
+    }
   }
 
   /* Language Styles */
@@ -395,9 +383,10 @@ address {
   .footer-content-wrapper {
     flex-direction: column;
     justify-content: center;
-      address {
-          font-size: 1.1rem;
-      }
+
+    address {
+      font-size: 1.1rem;
+    }
   }
 
   .google-map {
@@ -405,20 +394,22 @@ address {
     width: 150px;
     height: 150px;
     border-radius: 0;
-      iframe {
-          visibility: visible;
-          width: 150px;
-          height: 150px;
-          position: absolute;
-          top: 0;
-          border-radius: 2.5*$defaultBorderRadius;
-          margin-left: 2.5*$defaultGap;
-      }
-      a{
-          visibility: hidden;
-          height: 0;
-          width: 0;
-      }
+
+    iframe {
+      visibility: visible;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 0;
+      border-radius: 2.5*$defaultBorderRadius;
+      margin-left: 2.5*$defaultGap;
+    }
+
+    a {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
   }
 }
 
