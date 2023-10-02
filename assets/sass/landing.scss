@@ -2,7 +2,7 @@
 @import "mixins";
 @import "common";
 
-  /* General Styles */
+/* General Styles */
 html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
 }
@@ -36,6 +36,11 @@ section {
 ul {
   margin: 0;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
 }
 
 header {
@@ -224,6 +229,20 @@ footer {
   }
 }
 
+// Gallery Styles
+.gallery-container {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: $defaultGap;
+
+  .gallery-item {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 /* Footer styles */
 
 .footer-content-wrapper {
@@ -379,6 +398,12 @@ footer {
     margin-right: $defaultGap;
   }
 
+  /* Gallery Styles */
+  .gallery-container {
+    grid-template-columns: repeat(2, 49%);
+    column-gap: $defaultGap;
+  }
+
   /* Footer Styles */
   .footer-content-wrapper {
     flex-direction: column;
@@ -419,5 +444,15 @@ footer {
   .hero-texts-container {
     width: 45%;
     padding: 5*$defaultGap 0;
+  }
+
+  //  Gallery Styles
+  .gallery-container {
+    grid-template-columns: repeat(3, 33%);
+
+    .gallery-item:nth-of-type(3) {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 2;
+    }
   }
 }
