@@ -1,0 +1,61 @@
+@import "common";
+
+
+main {
+  padding: 0 $defaultGap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    width: 100%;
+  }
+
+  #result {
+    width: 100%;
+    font-weight: 700;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: $defaultGap;
+  }
+
+  #contact-form {
+    width: 100%;
+    background-color: $modalWhiteBackground;
+    padding: $defaultGap;
+    border-radius: $defaultBorderRadius;
+
+
+    .buttons-container {
+      display: flex;
+      margin-top: $defaultGap;
+    }
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    padding: 0;
+
+    p {
+      width: 70%;
+    }
+
+    #contact-form {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    p {
+      width: 50%;
+    }
+
+    #contact-form {
+      width: 50%;
+    }
+  }
+}

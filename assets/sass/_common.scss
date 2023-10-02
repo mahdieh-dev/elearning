@@ -56,6 +56,29 @@ footer {
   height: 57%;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5*$defaultGap;
+  margin-top: $defaultGap;
+  font-family: RobotoMedium, sans-serif;
+  font-weight: 600;
+  width: 100%;
+
+  input, textarea {
+    font-size: 1rem;
+    padding: 0.5*$defaultGap;
+    outline: 0;
+    border-radius: $defaultBorderRadius;
+
+    &:focus {
+      @include boxShadow($white);
+    }
+  }
+}
+
+// Common Styles
+
 .baseButton {
   padding: $defaultGap;
   border-radius: $defaultBorderRadius;
@@ -197,6 +220,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+
   /* Footer Styles */
   footer {
     display: flex;

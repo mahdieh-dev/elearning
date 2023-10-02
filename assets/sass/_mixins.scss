@@ -1,7 +1,7 @@
 @import "vars";
 
-@mixin boxShadow {
-  box-shadow: 0 0 10px $shadowColor;
+@mixin boxShadow($color: $shadowColor) {
+  box-shadow: 0 0 10px $color;
 }
 
 @mixin greyBoxShadow {
