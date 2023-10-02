@@ -301,42 +301,40 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main p {
-  width: 100%;
+main .gallery-container {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 1em;
 }
-main #result {
+main .gallery-container .gallery-item img {
   width: 100%;
-  font-weight: 700;
-  color: #f09433;
-  text-align: center;
-  margin-bottom: 1em;
+  object-fit: cover;
+  overflow: hidden;
 }
-main #contact-form {
+
+#modal-content {
+  position: relative;
+  padding: 0 1em;
+}
+#modal-content img {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 1em;
-  border-radius: 8px;
-}
-main #contact-form .buttons-container {
-  display: flex;
-  margin-top: 1em;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-  main p {
-    width: 70%;
-  }
-  main #contact-form {
-    width: 70%;
+  main .gallery-container {
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1em;
   }
 }
 @media only screen and (min-width: 1200px) {
-  main p {
-    width: 50%;
+  main .gallery-container {
+    grid-template-columns: repeat(3, 32.5%);
   }
-  main #contact-form {
-    width: 50%;
+  main .gallery-container .gallery-item:nth-of-type(3) {
+    grid-column: 2/span 2;
+    grid-row: 1/span 2;
   }
 }
 
-/*# sourceMappingURL=contactus.css.map */
+/*# sourceMappingURL=about.css.map */

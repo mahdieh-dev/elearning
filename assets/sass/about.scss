@@ -1,0 +1,51 @@
+@import "common";
+
+main {
+  @include main;
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: $defaultGap;
+
+    .gallery-item {
+      img {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+#modal-content {
+  position: relative;
+  padding: 0 $defaultGap;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    .gallery-container {
+      grid-template-columns: repeat(2, 49%);
+      column-gap: $defaultGap;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    .gallery-container {
+      grid-template-columns: repeat(3, 32.5%);
+
+      .gallery-item:nth-of-type(3) {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
+      }
+    }
+  }
+}

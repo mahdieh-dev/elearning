@@ -6,7 +6,11 @@ html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
 }
 
-h1, h3, h4, li {
+h1 {
+  font-family: Lilita One, sans-serif;
+}
+
+h3, h4, li {
   font-family: RobotoMedium, sans-serif;
 }
 
@@ -219,7 +223,49 @@ label {
   }
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: $modalWhiteBackground;
+  justify-content: center;
+  align-items: center;
+  z-index: -1000;
+
+  #cross-icon {
+    font-size: 2rem;
+    color: $black;
+    position: absolute;
+    top: 2*$defaultGap;
+    right: 2*$defaultGap;
+  }
+
+  &.show {
+    display: flex;
+    z-index: 1000;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+
+  // Header Styles
+  #nav-header {
+    visibility: visible;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .header-item {
+    font-size: 1.2rem;
+    margin-left: 2*$defaultGap;
+  }
+
+  .menu-icon-container {
+    visibility: hidden;
+  }
 
   /* Footer Styles */
   footer {

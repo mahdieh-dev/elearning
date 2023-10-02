@@ -2,10 +2,7 @@
 
 
 main {
-  padding: 0 $defaultGap;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include main;
 
   p {
     width: 100%;
@@ -36,8 +33,6 @@ main {
 
 @media only screen and (min-width: 768px) {
   main {
-    padding: 0;
-
     p {
       width: 70%;
     }

@@ -19,7 +19,11 @@ html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
 }
 
-h1, h3, h4, li {
+h1 {
+  font-family: Lilita One, sans-serif;
+}
+
+h3, h4, li {
   font-family: RobotoMedium, sans-serif;
 }
 
@@ -220,7 +224,43 @@ label input:focus, label textarea:focus {
   height: 0;
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: -1000;
+}
+#modal #cross-icon {
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+#modal.show {
+  display: flex;
+  z-index: 1000;
+}
+
 @media only screen and (min-width: 768px) {
+  #nav-header {
+    visibility: visible;
+    height: auto;
+    flex-direction: row;
+  }
+  .header-item {
+    font-size: 1.2rem;
+    margin-left: 2em;
+  }
+  .menu-icon-container {
+    visibility: hidden;
+  }
   /* Footer Styles */
   footer {
     display: flex;
@@ -335,6 +375,7 @@ label input:focus, label textarea:focus {
   box-shadow: 4px 4px 5px grey;
 }
 .article-card img {
+  width: 70%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -370,16 +411,6 @@ label input:focus, label textarea:focus {
   object-fit: contain;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: 100%;
-  row-gap: 1em;
-}
-.gallery-container .gallery-item img {
-  width: 100%;
-  object-fit: cover;
-}
-
 @media only screen and (min-width: 600px) {
   .hero-texts-container {
     padding: 1em;
@@ -393,19 +424,6 @@ label input:focus, label textarea:focus {
   }
   p {
     font-size: 1.1rem;
-  }
-  /* Header Styles */
-  #nav-header {
-    visibility: visible;
-    height: auto;
-    flex-direction: row;
-  }
-  .header-item {
-    font-size: 1.2rem;
-    margin-left: 2em;
-  }
-  .menu-icon-container {
-    visibility: hidden;
   }
   /* Hero Styles */
   .hero {
@@ -436,7 +454,6 @@ label input:focus, label textarea:focus {
   }
   .article-card img {
     width: 100%;
-    height: 48px;
     border-radius: 8px;
   }
   /* Language Styles */
@@ -447,24 +464,12 @@ label input:focus, label textarea:focus {
   .language-card {
     margin-right: 1em;
   }
-  /* Gallery Styles */
-  .gallery-container {
-    grid-template-columns: repeat(2, 49%);
-    column-gap: 1em;
-  }
 }
 @media only screen and (min-width: 1200px) {
   /* Hero Styles */
   .hero-texts-container {
     width: 45%;
     padding: 5em 0;
-  }
-  .gallery-container {
-    grid-template-columns: repeat(3, 33%);
-  }
-  .gallery-container .gallery-item:nth-of-type(3) {
-    grid-column: 2/span 2;
-    grid-row: 1/span 2;
   }
 }
 

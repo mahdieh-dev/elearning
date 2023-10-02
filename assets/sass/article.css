@@ -19,7 +19,11 @@ html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
 }
 
-h1, h3, h4, li {
+h1 {
+  font-family: Lilita One, sans-serif;
+}
+
+h3, h4, li {
   font-family: RobotoMedium, sans-serif;
 }
 
@@ -220,7 +224,43 @@ label input:focus, label textarea:focus {
   height: 0;
 }
 
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: -1000;
+}
+#modal #cross-icon {
+  font-size: 2rem;
+  color: #000;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+#modal.show {
+  display: flex;
+  z-index: 1000;
+}
+
 @media only screen and (min-width: 768px) {
+  #nav-header {
+    visibility: visible;
+    height: auto;
+    flex-direction: row;
+  }
+  .header-item {
+    font-size: 1.2rem;
+    margin-left: 2em;
+  }
+  .menu-icon-container {
+    visibility: hidden;
+  }
   /* Footer Styles */
   footer {
     display: flex;
@@ -256,11 +296,11 @@ label input:focus, label textarea:focus {
   }
 }
 article {
-  padding: 1em;
-  margin-top: 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
 }
 article img {
   width: 100%;

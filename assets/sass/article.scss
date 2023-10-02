@@ -1,11 +1,8 @@
 @import "common";
 
 article {
-  padding: $defaultGap;
+  @include main;
   margin-top: $defaultGap;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   img {
     width: 100%;
