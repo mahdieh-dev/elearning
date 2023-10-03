@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/assets/sass/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/08c0a55de0.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<nav>
+    <div class="menu-icon-container" onclick="onMenuIconClick(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <ul id="nav-header">
+        <li class="header-item"><a href="/task1">Home</a></li>
+        <li class="header-item"><a href="/task1/about.html">About</a></li>
+        <li class="header-item"><a href="/task1/contactus.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis iusto nesciunt nobis nostrum nulla optio
+        perspiciatis vitae, voluptatibus. A distinctio eos ipsa ipsam iusto labore laudantium libero magni maiores
+        mollitia pariatur quis saepe sed suscipit ullam vero vitae, voluptatem. Alias aliquam fuga fugit. Est facere
+        impedit minus modi quod?</p>
+    <div class="gallery-container">
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?1"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?2"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?3"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?4"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?5"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?6"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+        <div class="gallery-item"><img
+                src="https://source.unsplash.com/collection/190727/800x600?7"
+                alt="dummy image from unsplash website"
+                onclick="onImageClick(this)"
+        /></div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content-wrapper">
+        <div>
+            <a href='https://twitter.com' class="fa fa-twitter"></a>
+            <a href='https://instagram.com' class="fa fa-instagram"></a>
+            <a href='https://youtube.com' class="fa fa-youtube"></a>
+        </div>
+        <address>
+            Developed by <a href="mailto:mahdiehshavandi@ymail.com">Mahdieh Shavandi</a>.<br>
+            Visit my portfolio at:<br>
+            <a href="https://mahdieh.site">mahdieh.site</a><br>
+            Morvarid Shahr, Zone 22nd<br>
+            Tehran, Iran
+        </address>
+    </div>
+    <div class="google-map">
+        <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%88%D8%A7%D8%B1%DB%8C%D8%AF+%D8%B4%D9%87%D8%B1%E2%80%AD/@35.7526406,51.135479,17z/data=!4m14!1m7!3m6!1s0x3f8defc89a7b4efd:0xcc5a977b12644b4b!2sKhademin(H.S)15!8m2!3d35.7528563!4d51.1331683!16s%2Fg%2F11s93tynhr!3m5!1s0x3f8def9d73c8d067:0x1e4a3a2f19f1f591!8m2!3d35.7526297!4d51.138285!16s%2Fg%2F11v00c3h7k?entry=ttu">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.9253052921886!2d51.1354790112118!3d35.752640632978114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8def9d73c8d067%3A0x1e4a3a2f19f1f591!2z2YXYsdmI2KfYsduM2K8g2LTZh9ix!5e0!3m2!1sen!2s!4v1695273350494!5m2!1sen!2s"
+                width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+<div id="modal">
+    <div id="modal-content"></div>
+    <i class="fa-solid fa-xmark" id="cross-icon" onclick="onModalClose()"></i>
+</div>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/about.js"></script>
+</body>
+</html>
