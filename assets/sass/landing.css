@@ -1,18 +1,26 @@
 @font-face {
   font-family: RobotoRegular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(/task1/assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoMedium;
-  src: url(/assets/fonts/Roboto-Medium.ttf);
+  src: url(/task1/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(/task1/assets/fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: RobotoRegular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(/task1/assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoMedium;
-  src: url(/assets/fonts/Roboto-Medium.ttf);
+  src: url(/task1/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(/task1/assets/fonts/Roboto-Bold.ttf);
 }
 /* General Styles */
 html, body, input, textarea, button {
@@ -61,7 +69,7 @@ a {
 header {
   font-size: 1.7rem;
   line-height: 1;
-  font-weight: bold;
+  font-family: RobotoBold, sans-serif;
   margin-top: 2em;
 }
 
@@ -78,7 +86,6 @@ label {
   gap: 0.5em;
   margin-top: 1em;
   font-family: RobotoMedium, sans-serif;
-  font-weight: 600;
   width: 100%;
 }
 label input, label textarea {
@@ -391,9 +398,12 @@ label input:focus, label textarea:focus {
   flex-wrap: wrap;
   padding: 0;
   gap: 1em;
+  justify-content: center;
 }
-
-.language-card {
+#languages-container .mySlides {
+  width: 100%;
+}
+#languages-container .mySlides .language-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,12 +415,39 @@ label input:focus, label textarea:focus {
   background-color: #e5e5f7;
   box-shadow: 4px 4px 5px grey;
 }
-.language-card img {
+#languages-container .mySlides .language-card img {
   width: 100px;
   height: 100px;
   object-fit: contain;
 }
 
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #f09433;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 600px) {
   .hero-texts-container {
     padding: 1em;
@@ -461,7 +498,10 @@ label input:focus, label textarea:focus {
     justify-content: center;
     margin-top: 2em;
   }
-  .language-card {
+  #languages-container .mySlides {
+    width: 50%;
+  }
+  #languages-container .mySlides .language-card {
     margin-right: 1em;
   }
 }

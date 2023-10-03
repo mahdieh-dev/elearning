@@ -1,0 +1,103 @@
+@import "common";
+
+aside {
+  .aside-content-container {
+    padding: 0 $defaultGap;
+    display: flex;
+    margin: 3*$defaultGap $defaultGap 0 $defaultGap;
+    justify-content: space-evenly;
+    border: 3px solid $secondary;
+
+    div {
+      font-family: RobotoMedium, sans-serif;
+      cursor: pointer;
+    }
+
+    div:not(:first-of-type) {
+      text-align: center;
+    }
+  }
+}
+
+main {
+  @include main;
+  margin: $defaultGap;
+
+  .content-container {
+    width: 100%;
+
+    .code-box-container {
+      .code-box-header {
+        display: flex;
+        border-top-left-radius: $defaultBorderRadius;
+        border-top-right-radius: $defaultBorderRadius;
+        background-color: $white;
+        padding: 0.5*$defaultGap $defaultGap;
+        gap: $defaultGap;
+        justify-content: space-between;
+        align-items: center;
+
+        .box-btn {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          background-color: $red;
+
+          &.yellow {
+            background-color: $yellow;
+          }
+
+          &.green {
+            background-color: $green;
+          }
+        }
+
+        i {
+          flex: 4;
+          text-align: right;
+          font-size: 1.1rem;
+          color: $black;
+        }
+      }
+
+      #code-snippet-box {
+        background-color: $black;
+        color: $white;
+        padding: $defaultGap;
+
+        pre {
+          code {
+            text-wrap: initial;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    float: left;
+
+    .aside-content-container {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      div:not(:first-of-type) {
+        border-top: 3px solid $secondary;
+      }
+    }
+  }
+
+  main {
+    .content-container {
+      .code-box-container {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+

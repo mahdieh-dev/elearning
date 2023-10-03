@@ -1,18 +1,26 @@
 @font-face {
   font-family: RobotoRegular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(/task1/assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoMedium;
-  src: url(/assets/fonts/Roboto-Medium.ttf);
+  src: url(/task1/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(/task1/assets/fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: RobotoRegular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(/task1/assets/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoMedium;
-  src: url(/assets/fonts/Roboto-Medium.ttf);
+  src: url(/task1/assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(/task1/assets/fonts/Roboto-Bold.ttf);
 }
 /* General Styles */
 html, body, input, textarea, button {
@@ -61,7 +69,7 @@ a {
 header {
   font-size: 1.7rem;
   line-height: 1;
-  font-weight: bold;
+  font-family: RobotoBold, sans-serif;
   margin-top: 2em;
 }
 
@@ -78,7 +86,6 @@ label {
   gap: 0.5em;
   margin-top: 1em;
   font-family: RobotoMedium, sans-serif;
-  font-weight: 600;
   width: 100%;
 }
 label input, label textarea {
@@ -300,13 +307,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 600px;
 }
 main p {
   width: 100%;
 }
 main #result {
   width: 100%;
-  font-weight: 700;
+  font-family: RobotoMedium, sans-serif;
   color: #f09433;
   text-align: center;
   margin-bottom: 1em;
