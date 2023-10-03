@@ -157,6 +157,26 @@
   }
 }
 
+// Scroll to top button styles
+#scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 2*$defaultGap;
+  right: 2*$defaultGap;
+  z-index: 100;
+  background-color: $secondary;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  @include boxShadow($shadowColor);
+
+  &:hover {
+    background-color: $shadowColor;
+  }
+}
+
 
 @media only screen and (min-width: 600px) {
   .hero-texts-container {

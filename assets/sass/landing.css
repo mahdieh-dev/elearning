@@ -25,6 +25,7 @@
 /* General Styles */
 html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -448,6 +449,24 @@ label input:focus, label textarea:focus {
     opacity: 1;
   }
 }
+#scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 100;
+  background-color: #f09433;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#scroll-to-top-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media only screen and (min-width: 600px) {
   .hero-texts-container {
     padding: 1em;

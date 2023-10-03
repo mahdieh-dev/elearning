@@ -25,6 +25,7 @@
 /* General Styles */
 html, body, input, textarea, button {
   font-family: RobotoRegular, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
