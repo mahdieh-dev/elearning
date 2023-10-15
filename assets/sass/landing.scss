@@ -1,5 +1,9 @@
 @import "common";
 
+section h2::before {
+  content: "💎 ";
+}
+
 /* Hero Styles */
 .hero {
   display: flex;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: RobotoRegular;
   src: url(../fonts/Roboto-Regular.ttf);
@@ -303,6 +304,10 @@ label input:focus, label textarea:focus {
     width: 0;
   }
 }
+section h2::before {
+  content: "💎 ";
+}
+
 /* Hero Styles */
 .hero {
   display: flex;
