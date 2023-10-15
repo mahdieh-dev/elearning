@@ -55,7 +55,7 @@ header {
 }
 
 footer {
-  border-top: $defaultBorderWidth solid $white;
+  background-color: $modalBlackBackground;
   padding: $defaultGap;
   margin-top: 2*$defaultGap;
   height: 57%;

@@ -76,7 +76,7 @@ header {
 }
 
 footer {
-  border-top: 8px solid #fff;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1em;
   margin-top: 2em;
   height: 57%;
