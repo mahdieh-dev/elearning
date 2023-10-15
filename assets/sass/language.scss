@@ -2,14 +2,17 @@
 
 aside {
   .aside-content-container {
-    padding: 0 $defaultGap;
+    padding: 0 2*$defaultGap;
     display: flex;
     margin: 3*$defaultGap $defaultGap 0 $defaultGap;
     justify-content: space-evenly;
-    border: 3px solid $secondary;
+    background-color: $secondary;
+    border-radius: $defaultBorderRadius;
+    color: $darkGrey;
+    font-family: RobotoBold, sans-serif;
+    font-size: 1.2rem;
 
     div {
-      font-family: RobotoMedium, sans-serif;
       cursor: pointer;
     }
 
@@ -86,7 +89,7 @@ main {
       justify-content: flex-start;
 
       div:not(:first-of-type) {
-        border-top: 3px solid $secondary;
+        border-top: 3px solid $darkGrey;
       }
     }
   }

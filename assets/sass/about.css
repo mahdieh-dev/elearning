@@ -42,11 +42,11 @@ html, body {
 }
 
 body {
-  background-color: #010158;
+  background-color: #267da1;
   color: #fff;
   padding: 0;
   margin: 0;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, transparent 0.5px);
+  background-image: radial-gradient(#56cfe1 0.5px, transparent 0.5px), radial-gradient(#56cfe1 0.5px, transparent 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
 }
@@ -109,14 +109,14 @@ label input:focus, label textarea:focus {
 }
 
 .btn-primary {
-  background-color: #00f;
+  background-color: #4e908e;
   color: #fff;
 }
 
 .btn-secondary {
   background-color: transparent;
   box-shadow: none;
-  color: #00f;
+  color: #4e908e;
 }
 
 /* Header Styles */
@@ -303,6 +303,22 @@ label input:focus, label textarea:focus {
     width: 0;
   }
 }
+@keyframes modalContentsAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes modalAnimation {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
 main {
   padding: 0 1em;
   display: flex;
@@ -321,11 +337,17 @@ main .gallery-container .gallery-item img {
   overflow: hidden;
 }
 
-#modal-content {
+#modal {
+  animation-name: modalAnimation;
+  animation-duration: 1s;
+}
+#modal #modal-content {
+  animation-name: modalContentsAnimation;
+  animation-duration: 2s;
   position: relative;
   padding: 0 1em;
 }
-#modal-content img {
+#modal #modal-content img {
   width: 100%;
   object-fit: cover;
 }

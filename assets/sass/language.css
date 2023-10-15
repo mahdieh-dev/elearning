@@ -42,11 +42,11 @@ html, body {
 }
 
 body {
-  background-color: #010158;
+  background-color: #267da1;
   color: #fff;
   padding: 0;
   margin: 0;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, transparent 0.5px);
+  background-image: radial-gradient(#56cfe1 0.5px, transparent 0.5px), radial-gradient(#56cfe1 0.5px, transparent 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
 }
@@ -109,14 +109,14 @@ label input:focus, label textarea:focus {
 }
 
 .btn-primary {
-  background-color: #00f;
+  background-color: #4e908e;
   color: #fff;
 }
 
 .btn-secondary {
   background-color: transparent;
   box-shadow: none;
-  color: #00f;
+  color: #4e908e;
 }
 
 /* Header Styles */
@@ -304,14 +304,17 @@ label input:focus, label textarea:focus {
   }
 }
 aside .aside-content-container {
-  padding: 0 1em;
+  padding: 0 2em;
   display: flex;
   margin: 3em 1em 0 1em;
   justify-content: space-evenly;
-  border: 3px solid #f09433;
+  background-color: #f9c750;
+  border-radius: 8px;
+  color: #202020;
+  font-family: RobotoBold, sans-serif;
+  font-size: 1.2rem;
 }
 aside .aside-content-container div {
-  font-family: RobotoMedium, sans-serif;
   cursor: pointer;
 }
 aside .aside-content-container div:not(:first-of-type) {
@@ -376,7 +379,7 @@ main .content-container .code-box-container #code-snippet-box pre code {
     justify-content: flex-start;
   }
   aside .aside-content-container div:not(:first-of-type) {
-    border-top: 3px solid #f09433;
+    border-top: 3px solid #202020;
   }
   main .content-container .code-box-container {
     max-width: 60%;

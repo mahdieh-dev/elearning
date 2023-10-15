@@ -42,11 +42,11 @@ html, body {
 }
 
 body {
-  background-color: #010158;
+  background-color: #267da1;
   color: #fff;
   padding: 0;
   margin: 0;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, transparent 0.5px);
+  background-image: radial-gradient(#56cfe1 0.5px, transparent 0.5px), radial-gradient(#56cfe1 0.5px, transparent 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
 }
@@ -109,14 +109,14 @@ label input:focus, label textarea:focus {
 }
 
 .btn-primary {
-  background-color: #00f;
+  background-color: #4e908e;
   color: #fff;
 }
 
 .btn-secondary {
   background-color: transparent;
   box-shadow: none;
-  color: #00f;
+  color: #4e908e;
 }
 
 /* Header Styles */
@@ -345,7 +345,7 @@ label input:focus, label textarea:focus {
   margin-top: 0;
 }
 .hero-title span {
-  color: #00f;
+  color: #4e908e;
 }
 
 .buttons-container {
@@ -433,7 +433,7 @@ label input:focus, label textarea:focus {
 }
 
 .active {
-  background-color: #f09433;
+  background-color: #f9c750;
 }
 
 .fade {
@@ -455,7 +455,7 @@ label input:focus, label textarea:focus {
   bottom: 2em;
   right: 2em;
   z-index: 100;
-  background-color: #f09433;
+  background-color: #f9c750;
   border: none;
   width: 48px;
   height: 48px;

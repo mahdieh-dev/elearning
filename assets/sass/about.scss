@@ -1,5 +1,23 @@
 @import "common";
 
+@keyframes modalContentsAnimation {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes modalAnimation {
+  from {
+    opacity: 0.2
+  }
+  to {
+    opacity: 1
+  }
+}
+
 main {
   @include main;
 
@@ -18,14 +36,22 @@ main {
   }
 }
 
-#modal-content {
-  position: relative;
-  padding: 0 $defaultGap;
+#modal {
+  animation-name: modalAnimation;
+  animation-duration: 1s;
 
-  img {
-    width: 100%;
-    object-fit: cover;
+  #modal-content {
+    animation-name: modalContentsAnimation;
+    animation-duration: 2s;
+    position: relative;
+    padding: 0 $defaultGap;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
+
 }
 
 @media only screen and (min-width: 768px) {
