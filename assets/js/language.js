@@ -1,5 +1,5 @@
 function onLanguageClick(x) {
-  const rustCode = `struct Sheep { naked: bool, name: &'static str }
+    const rustCode = `struct Sheep { naked: bool, name: &'static str }
 
     trait Animal {
         fn new(name: &'static str) -> Self;
@@ -58,7 +58,7 @@ function onLanguageClick(x) {
         dolly.talk();
     }`;
 
-  const goCode = `
+    const goCode = `
     package main
     
     import (
@@ -86,7 +86,7 @@ function onLanguageClick(x) {
         http.ListenAndServe(":8090", nil)
     }
     `;
-  const pythonCode = `
+    const pythonCode = `
   def add(x, y):
       return x + y
   
@@ -134,28 +134,28 @@ function onLanguageClick(x) {
             break
       else:
           print("Invalid Input")`;
-  let code = "";
-  if (x && x === "Python") {
-    code = pythonCode;
-  } else if (x && x === "Go") {
-    code = goCode;
-  } else {
-    code = rustCode;
-  }
+    let code
+    if (x && x === "Python") {
+        code = pythonCode;
+    } else if (x && x === "Go") {
+        code = goCode;
+    } else {
+        code = rustCode;
+    }
 
-  document.getElementById("language-title").innerHTML = `<p>${x ?? "Rust"}</p>`;
-  document.getElementById(
-    "code-snippet-box"
-  ).innerHTML = `<pre><code id="code-snippet">${code}</code></pre>`;
+    document.getElementById("language-title").innerHTML = `<p>${x ?? "Rust"}</p>`;
+    document.getElementById(
+        "code-snippet-box"
+    ).innerHTML = `<pre><code id="code-snippet">${code}</code></pre>`;
 }
 
 const languagePassed = new URL(document.location).searchParams.get("language");
 onLanguageClick(languagePassed ?? "Rust");
 
 function copyToClipboard() {
-  navigator.clipboard
-    .writeText(document.getElementById("code-snippet").innerText)
-    .then((r) => {
-      console.log("Copied the code to the clipboard!", r);
-    });
+    navigator.clipboard
+        .writeText(document.getElementById("code-snippet").innerText)
+        .then((r) => {
+            console.log("Copied the code to the clipboard!", r);
+        });
 }
