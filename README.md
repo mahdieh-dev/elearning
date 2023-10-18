@@ -43,8 +43,22 @@ https://github.com/mahdieh-dev/trilingo.git
 
 ## Usage
 
-- right click on anywhere inside the `index.js` file and click on `Open With Live Server`.
+- On VSCode: Right click on anywhere inside the `index.js` file and click on `Open With Live Server`.
   This will open up the project on a browser on `http://127.0.0.1:5500/`.
+
+## Features
+
+In this project:
+
+- Global color pallet is defined that provides the possibility to change the theme of the project easily
+- Pseudo-classes and pseudo-elements are used
+- Appropriate html tags are used in their appropriate places
+- The project started with CSS and then Sass was added and the project was organized
+- The Sass files can be found in the [./assets/sass](./assets/sass) folder
+- In the [_mixins.scss](./assets/sass/_mixins.scss) box shadow function and a default style for the `<main>` tags are
+  added
+- In the [_vars.scss](./assets/sass/_vars.scss) the color pallet of the project, fonts and default spacing and default
+  font sizes are added
 
 ## Authors
 
